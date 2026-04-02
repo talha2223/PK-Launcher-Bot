@@ -1,7 +1,7 @@
 {
     "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
     "prefix": "!",
-    "guild_id": YOUR_GUILD_ID_HERE,
+    "guild_id": "YOUR_GUILD_ID_HERE",
     "status_activity_type": "watching",
     "status_template": "Managing {users} PK Launcher Users",
     "default_users": 0,
