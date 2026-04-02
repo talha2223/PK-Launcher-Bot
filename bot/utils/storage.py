@@ -1,9 +1,13 @@
-﻿import asyncio
+import asyncio
 from pathlib import Path
 
 import aiosqlite
 
 DB_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "bot.db"
+
+# Ensure data directory exists
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+
 _db_lock = asyncio.Lock()
 
 
