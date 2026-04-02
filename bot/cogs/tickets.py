@@ -129,7 +129,8 @@ class TicketsCog(commands.Cog):
         asyncio.create_task(self._register_views())
 
     async def _register_views(self):
-        await self.bot.wait_until_ready()
+        if not self.bot.is_ready():
+            await self.bot.wait_until_ready()
         for guild in self.bot.guilds:
             categories = await get_ticket_categories(guild.id)
             if categories:

@@ -40,7 +40,8 @@ class GiveawaysCog(commands.Cog):
         asyncio.create_task(self._restore_giveaways())
 
     async def _restore_giveaways(self):
-        await self.bot.wait_until_ready()
+        if not self.bot.is_ready():
+            await self.bot.wait_until_ready()
         giveaways = await get_active_giveaways()
         for g in giveaways:
             delay = max(1, int(g["end_at"] - time.time()))
