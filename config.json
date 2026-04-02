@@ -1,0 +1,122 @@
+{
+    "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
+    "prefix": "!",
+    "guild_id": YOUR_GUILD_ID_HERE,
+    "status_activity_type": "watching",
+    "status_template": "Managing {users} PK Launcher Users",
+    "default_users": 0,
+    "status_use_member_count": true,
+    "launcher_version": "1.0.0",
+    "download_link": "https://pk-lancher.web.app/",
+    "install_video_link": "https://pk-lancher.web.app/",
+    "rules_channel_id": 0,
+    "welcome_channel_id": 0,
+    "auto_role_id": 0,
+    "auto_role_name": "💬 Members",
+    "vip_role_id": 0,
+    "vip_role_name": "VIP",
+    "report_channel_id": 0,
+    "review_channel_id": 0,
+    "ticket_category_id": 0,
+    "ticket_support_role_id": 0,
+    "ticket_message_channel_id": 0,
+    "economy": {
+        "daily_min": 50,
+        "daily_max": 120,
+        "streak_bonus": 5,
+        "daily_cooldown_seconds": 864000
+    },
+    "shop": {
+        "items": [
+            {
+                "id": "vip",
+                "name": "VIP Role",
+                "price": 500,
+                "type": "role",
+                "role_id": 0,
+                "role_name": "VIP",
+                "description": "Exclusive VIP access"
+            }
+        ]
+    },
+    "ai": {
+        "providers": [
+            "gemini",
+            "groq",
+            "openrouter"
+        ],
+        "safe_admin": true,
+        "language": "roman urdu",
+        "knowledge_similarity": 0.72,
+        "system_prompt": "you area urdu ai assistan ho PK Launcher kai .this is first pakistani minecraft client +launcher in pk client disccord server ,rowbiz kon hai | rowbiz pk launcher ka aik admin hai , owner kon hai | mr real and talha devlper and owner hain , abhi beta version chal aha hai launcher ka , logon ko kaho kai is server ko faimous kray invite kray aur logo ko aur promte kray is pakistani launcher ko , tumahara creater Talha and Mr Real hai  ",
+        "gemini": {
+            "model": "gemini-1.5-flash",
+            "temperature": 0.6,
+            "max_tokens": 1024,
+            "top_p": 0.9,
+            "top_k": 40
+        },
+        "groq": {
+            "model": "llama-3.1-8b-instant",
+            "temperature": 0.6,
+            "max_tokens": 1024,
+            "top_p": 0.9
+        },
+        "openrouter": {
+            "model": "openrouter/aurora-alpha",
+            "temperature": 0.6,
+            "max_tokens": 5110242,
+            "top_p": 0.9,
+            "site_url": "https://openrouter.ai/api/v1 ",
+            "app_name": "PK Launcher Bot"
+        }
+    },
+    "auto_mod": {
+        "bad_words": [
+            "ass", "asshole", "bakaiti", "bakchod", "bakchodi", "bakloli", "bastard",
+            "bc", "behen ch**d", "behenchod", "bhadvi", "bhadwa", "bhadwe", "bhadwi",
+            "bhen ch**d", "bhen k l*de", "bhen k lode", "bhenchod", "bhosda", "bhosdi ke",
+            "bhosdika", "bhosdike", "bhosri", "bhosriwala", "bitch", "bitches", "bkl",
+            "boobs", "bullshit", "ch**u", "ch*du", "chakka", "chink", "chod", "chodu",
+            "chut", "chutia", "chutiya", "chutiyapa", "chutiye", "chutmarike", "cocaine",
+            "cock", "cocks", "cripple", "cunt", "dick", "dickhead", "drugs", "fag", "faggot",
+            "fraud", "fuck", "fucker", "fucking", "gaali", "gaaliya", "gaaliyan", "gaand",
+            "gaandfat", "gaandmasti", "gaandu", "gadha", "gadhi", "gali", "gand", "gand mar",
+            "gand mara", "gandagi", "gandi", "gandmara", "gandu", "gandugiri", "ghanta",
+            "ghanta chutiya", "haga", "hagna", "hagne", "harami", "haramzada", "haramzadi",
+            "hawas", "hawasi", "heroin", "hijra", "incest", "jhaant", "jhant", "jhat",
+            "jhatka", "jhatu", "kameena", "kameeni", "kamina", "kaminapan", "kamini",
+            "kike", "kinnar", "kms", "kutiya", "kutta", "kutte", "kutti", "kys", "l***a",
+            "l*da", "lauda", "lawda", "ling", "lingam", "lingi", "loda", "loda lassan",
+            "loda lasun", "lund", "ma ki", "maa k lode", "maa ke lode", "maa ki",
+            "maa ki **t", "maa ki chut", "madar ch**d", "madar**od", "madarchod", "maderchod",
+            "mc", "meth", "molest", "molester", "motherchod", "motherfucker", "murder",
+            "nigga", "nigger", "nude", "nudes", "opium", "pedo", "pedophile", "penis",
+            "phish", "phishing", "pichwada", "pichwade", "porn", "potty", "pussy", "raand",
+            "rand", "randi", "randii", "randwa", "randwe", "rape", "rapist", "retard",
+            "saala", "saali", "saali kutti", "sala", "sali", "sex", "shit", "shithead",
+            "shoot", "slut", "spic", "stab", "steal", "stolen", "suar", "suicide", "suwar",
+            "tera baap", "tera bap", "teri ma", "teri maa", "terrorist", "tharki", "tharkii",
+            "tits", "tranny", "vagina", "weed", "whore", "bsdk"
+        ],
+        "block_invites": true,
+        "link_spam": {
+            "enabled": true,
+            "max_links": 3,
+            "per_seconds": 10
+        },
+        "anti_raid": {
+            "enabled": true,
+            "join_threshold": 5,
+            "per_seconds": 10
+        }
+    },
+    "api": {
+        "host": "0.0.0.0",
+        "port": 5000,
+        "auth_token": "CHANGE_ME_TO_SECURE_TOKEN"
+    },
+    "ai_auto": {
+        "enabled": true
+    }
+}

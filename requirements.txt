@@ -1,0 +1,14 @@
+﻿# Core
+python-dotenv>=1.0.1
+
+discord.py>=2.4.0
+
+# API
+Flask>=3.0.0
+
+# Utils
+aiosqlite>=0.20.0
+
+# Music
+yt-dlp>=2024.10.07
+PyNaCl>=1.5.0
